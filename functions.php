@@ -1,5 +1,6 @@
 <?php  
-require_once('config/connection.php'); 
+require_once('config/connection.php');
+date_default_timezone_set("Asia/Jakarta"); 
 session_start();  
     class functions {  
 

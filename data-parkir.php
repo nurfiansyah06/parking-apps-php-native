@@ -37,20 +37,27 @@
                     <h1 style="margin-top:-30px">Data Parkir</h1>
                     <div class="row">
                         <div class="col-md-12">
+                        
                             <div class="row">
+                                <?php 
+                                    $qty = 100;
+                                    foreach($rows['count_parkir'] as $jml) : 
+                                ?>
                                 <div class="col-xs-6">
-                                    <a href="tambah-parkir.php" class="btn btn-primary">Tambah Data Parkir</a>
+                                    <a href="tambah-parkir.php" class="btn btn-primary" style="display:<?= intval($jml) >= $qty ? 'none' : '' ?>">Tambah Data Parkir</a>
                                 </div>
+                                
                                 <div class="col-xs-6">
-                                    <?php 
-                                        $qty = 100;
-                                        foreach($rows['count_parkir'] as $jml) : 
-                                    ?>
-                                        <p style="font-weight:bold;float: right">Parkir yang masih tersedia : <?php echo $qty - intval($jml) ?></p>
-                                    <?php endforeach; ?>
+                                    <p style="font-weight:bold;float: right;display:<?= intval($jml) >= $qty ? 'none' : '' ?>">Parkir yang masih tersedia : <?php echo $qty - intval($jml) ?></p>
                                 </div>
                             </div>
-                            
+                                <?php if(intval($jml) >= $qty) : ?>
+                                <div class="alert alert-warning alert-dismissible" style="margin-top: 20px" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                    <i class="fa fa-warning"></i> Parkir Penuh
+                                </div>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
                             <table class="table table-striped">
                                 <thead>
                                     <tr>

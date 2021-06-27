@@ -7,11 +7,11 @@
         $password = $_POST['password'];  
         $user = $func->Login($username, $password);  
         if ($user) {  
-            // Registration Success  
+            // Login Success  
            header("location:home.php");  
         } else {  
-            // Registration Failed  
-            echo "<script>alert('Username / Password Not Match')</script>";  
+            // Login Failed  
+            echo "<script>alert('Username atau Password tidak sesuai!')</script>";  
         }  
     }  
 ?>
@@ -34,8 +34,9 @@
     <div class="container">
         <div class="card p-5 card-login justify-content-center">
             <h1 class="mb-3">
-                Aplikasi Parkir
+                ParkirApps
             </h1>
+            <p><span style="color:red">*</span> Login sebagai Operator</p>
             <form name="login" method="POST">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Username</label>

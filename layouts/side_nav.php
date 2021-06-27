@@ -8,8 +8,8 @@
         <nav>
             <ul class="nav">
                 <li><a href="./home.php" class="<?= $current_page == 'home.php' ? 'active' : '' ?>"><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
-                <li><a href="./data-parkir.php" class="<?= $current_page == 'data-parkir.php' ? 'active' : '' ?>"><i class="lnr lnr-code"></i> <span>Data Parkir</span></a></li>
-                <li><a href="./scan.php" class="<?= $current_page == 'scan.php' ? 'active' : '' ?>"><i class="lnr lnr-chart-bars"></i> <span>Scan QR Code</span></a></li>
+                <li><a href="./data-parkir.php" class="<?= $current_page == 'data-parkir.php' ? 'active' : '' ?>"><i class="lnr lnr-user"></i> <span>Data Parkir</span></a></li>
+                <li><a href="./scan.php" class="<?= $current_page == 'scan.php' ? 'active' : '' ?>"><i class="lnr lnr-location"></i> <span>Scan QR Code</span></a></li>
                 </li>
             </ul>
         </nav>

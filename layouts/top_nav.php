@@ -1,7 +1,7 @@
 <!-- NAVBAR -->
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="brand">
-        <a href="index.html"><img src="assets/img/logo-dark.png" alt="Klorofil Logo" class="img-responsive logo"></a>
+        <a href="./home.php"><span>ParkirApps</span></a>
     </div>
     <div class="container-fluid">
         <div class="navbar-btn">
@@ -17,7 +17,7 @@
                         <li >
                             <form name="login" method="post" action="">
                                 <!-- <p class="login button"> -->
-                                <input type="submit" name="logout" class="btn btn-danger" value="Logout" style="width: 100%" />
+                                <input type="submit" name="logout" class="btn btn-danger" value="Logout" style="width: 100%;margin-top: -2px" />
                                 <!-- </p> -->
                             </form>
                         </li>

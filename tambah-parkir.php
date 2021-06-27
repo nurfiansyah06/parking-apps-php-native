@@ -1,5 +1,6 @@
 <?php   
-    include_once('functions.php');  
+    include_once('functions.php');
+    date_default_timezone_set("Asia/Jakarta");  
     if(isset($_POST['logout'])){  
         // remove all session variables  
         session_unset();   

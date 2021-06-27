@@ -4,7 +4,6 @@ require_once("dompdf/autoload.inc.php");
 include_once('functions.php'); 
 
 use Dompdf\Dompdf;
-define("DOMPDF_UNICODE_ENABLED", true);
 
 // get base url for qr code img
 $path = explode('/',$_SERVER['REQUEST_URI']);
@@ -88,7 +87,7 @@ $html .= "
         $pay = $time_spent_new*$costPerHour;
 
         $html .= "<h4>Lama Parkir :".$time_spent."</h4>
-                  <h4>Jumlah yang harus dibayar : Rp".$pay."</h4>
+                  <h4>Jumlah yang harus dibayar : Rp.".$pay."</h4>
                 ";
     }
 }

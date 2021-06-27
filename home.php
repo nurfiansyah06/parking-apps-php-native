@@ -14,15 +14,19 @@
 
 <?= include('layouts/style.php') ?>
 <style>
-    .card {
-        background: #fff;
-        padding: 10px;
-        height : 200px;
+    .panel {
+        border-radius : 8px;
+        width: 70%;
+        height: 150px;
+        border: none!important;
     }
 
-    .card-qr-code {
-        background-color : #FFFF00;
-        border-radius: 18px
+    .btn {
+        margin-top: 45px;
+    }
+
+    .color-panel {
+        background-image: linear-gradient(to right, rgba(77, 5, 232, 1), rgba(44, 130, 201, 1))
     }
 </style>
 <body>
@@ -36,19 +40,21 @@
 		<div class="main">
 			<!-- MAIN CONTENT -->
 			<div class="main-content">
-				<div class="container">
+				<div class="container-fluid">
+                        <h1>Dashboard Menu</h1>
+                        <hr>
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="card card-qr-code">
-                                <div class="card-body qr-code-card">
-                                    <a href="#" class="btn btn-primary">Scan QR Code</a>
+                            <div class="panel color-panel">
+                                <div class="panel-body text-center">
+                                    <a href="scan.php" class="btn btn-primary" >Scan QR Code</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <a href="data-parkir.php" class="btn btn-primary">Data Parkir</a>
+                            <div class="panel color-panel">
+                                <div class="panel-body text-center">
+                                    <a href="data-parkir.php" class="btn btn-primary" >Data Parkir</a>
                                 </div>
                             </div>
                         </div>
@@ -61,7 +67,7 @@
 		<div class="clearfix"></div>
 		<footer>
 			<div class="container-fluid">
-				<p class="copyright">&copy; 2021 <a href="https://www.themeineed.com" target="_blank">ParkirApps</a>. All Rights Reserved.</p>
+				<p class="copyright">&copy; 2021 <a href="" target="_blank">ParkirApps</a>. All Rights Reserved.</p>
 			</div>
 		</footer>
 	</div>
